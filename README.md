@@ -1,47 +1,25 @@
 # 1_Data_Analysis_Warm_Up_-NP-
-## Pandas Data Analysis Warm-Up
+# Pandas Data Analysis Warm-Up
 
 A quick, hands-on practice notebook designed to brush up on fundamental data analysis techniques using Python's **Pandas** and **NumPy** libraries. 
 
 This project demonstrates core DataFrame manipulation skills, basic filtering, and exploratory data analysis (EDA) techniques on a small, synthetic student dataset.
 
----
 
-## Objectives & Tasks Covered
+## Project Structure
 
-The notebook steps through 15 fundamental operations frequently used in data science workflows:
+The repository includes:
+* **`1-Data Analysis Warm Up - question.ipynb`**: The Jupyter Notebook outlining the fundamental data manipulation exercises and practice cells.
 
-### 1. Data Inspection
-* **Top 3 Rows:** Viewing the initial structure using `.head()`.
-* **Last 3 Rows:** Inspecting the tail end of the dataset using `.tail()`.
-* **Dataset Shape:** Discovering total row and column counts using `.shape`.
-* **Dataset Information:** Displaying data types, column counts, and memory footprint via `.info()`.
-
-### 2. Summary Statistics & Exploration
-* **Null Value Check:** Finding and handling missing values with `.isnull().sum()`.
-* **Overall Statistics:** Generating statistical metrics (mean, min, max, etc.) using `.describe()`.
-* **Categorical Breakdown:** Extracting unique values, counting unique elements, and finding value distribution frequencies (`.unique()`, `.nunique()`, and `.value_counts()`) for categorical dimensions (e.g., `Gender`).
-
-### 3. Filtering, Sorting & Data Manipulation
-* **Range Filtering:** Finding students with specific score windows using the `.between()` method.
-* **Aggregations:** Calculating mathematical aggregates like the average marks (`.mean()`).
-* **Column Dropping:** Removing unnecessary columns safely from a DataFrame (`.drop()`).
-* **Metadata Extraction:** Grabbing a raw list of column headers (`.columns`).
-* **Sorting Data:** Sorting records sequentially by specific numeric parameters (`.sort_values()`).
-* **Conditional Slicing:** Extracting target column attributes (e.g., `Name` and `Marks`) filtered dynamically by conditions (e.g., female students only).
-
----
 
 ## Tech Stack & Dependencies
 
 * **Language:** Python 3.x
-* **Libraries:** * [Pandas](https://pandas.pydata.org/) - For structured data manipulation.
-  * [NumPy](https://numpy.org/) - For underlying multi-dimensional array capabilities.
+* **Libraries Used:** Pandas, NumPy
 * **Environment:** Jupyter Notebook / JupyterLab
 
----
 
-## Dataset Quick View
+## Dataset Overview
 
 The operations are conducted on a built-in dictionary structured as follows:
 
@@ -55,16 +33,35 @@ The operations are conducted on a built-in dictionary structured as follows:
 | Mittal | 83 | Female |
 | Archana | 99 | Female |
 
----
+
+## Key Tasks Covered
+
+The notebook goes through 15 practical steps to find insights on:
+1. **Data Inspection:** Using `.head()`, `.tail()`, `.shape`, and `.info()` to view rows, structural counts, and memory details.
+2. **Summary Statistics:** Generating data summaries via `.describe()` and checking for missing data using `.isnull().sum()`.
+3. **Categorical Analysis:** Finding unique items and tracking distribution frequencies using `.unique()`, `.nunique()`, and `.value_counts()`.
+4. **Data Slicing & Filtering:** Isolating rows using score ranges with `.between()`, computing column updates, and applying logical filters (like isolating rows matching female students).
+5. **Sorting & Column Management:** Dropping specific unneeded columns, listing column headers, and sorting rows sequentially by numeric attributes.
+
 
 ## How to Run This Project
 
-Choose the option below that fits your workflow best:
+Choose the option below that works best for you:
 
-### Option 1: The Quick Way (No Tools Required)
+### Option 1: The Quick Way (No Git Required)
 1. Click the green **Code** button at the top right of this GitHub page.
-2. Select **Download ZIP** and extract the files to a folder on your computer.
+2. Click **Download ZIP** and unzip the files into a folder on your computer.
 3. Open your terminal or command prompt, navigate to that folder, and run:
    ```bash
    pip install pandas numpy notebook
    jupyter notebook
+
+## Author
+
+Priya Patel  
+Aspiring Data Analyst  
+Email: priyapatel18217@gmail.com  
+LinkedIn: 
+GitHub:  
+
+If you like this project, feel free to give it a star!
